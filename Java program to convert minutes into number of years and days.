@@ -1,0 +1,29 @@
+package methods.and.pkgpackage;
+import java.util.Scanner;
+public class MethodsAndPackage {
+
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the number of minutes: ");
+        int A = sc.nextInt();
+       
+       myMethod(A);
+      
+        
+    }
+   public static int myMethod(int A){
+        
+        int B = A/(60*24*365);
+        
+        A=A-B*(60*24*365);
+        
+        int C = A/(60*24);
+        System.out.printf("%d years and %d days\n",B,C);
+             
+       return B;
+       
+   }
+    
+}
